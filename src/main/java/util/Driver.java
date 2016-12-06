@@ -14,6 +14,7 @@ public class Driver {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
+
         Runtime.getRuntime().addShutdownHook(new Thread(){
             public void run(){
                 driver.quit();

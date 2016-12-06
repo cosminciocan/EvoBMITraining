@@ -12,7 +12,7 @@ public class HomePageTest {
     HomePageSteps homePageSteps = new HomePageSteps();
 
     @Test
-    public void getHomePage(){
+    public void getHomePage() {
         homePageSteps.goToHomePage();
     }
 }
