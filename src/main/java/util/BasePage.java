@@ -13,6 +13,8 @@ public abstract class BasePage extends BMIConstants {
         startSuite();
     }
 
+    public abstract void openPage();
+
     private static void startSuite() {
         try {
             Driver.initDriver();
@@ -32,5 +34,4 @@ public abstract class BasePage extends BMIConstants {
 
     }
 
-    public abstract void openPage();
 }
