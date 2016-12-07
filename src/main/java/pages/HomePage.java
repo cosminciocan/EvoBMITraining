@@ -5,11 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import util.BMIConstants;
 import util.BasePage;
 
-import java.util.List;
-
-/**
- * Created by cosminciocan on 17/11/2016.
- */
 public class HomePage extends BasePage {
 
     @FindBy(className = "icon-c-down-dir")

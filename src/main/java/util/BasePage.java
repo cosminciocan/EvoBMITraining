@@ -2,6 +2,8 @@ package util;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.Random;
+
 /**
  * Created by cosminciocan on 17/11/2016.
  */
@@ -12,6 +14,8 @@ public abstract class BasePage extends BMIConstants {
     static {
         startSuite();
     }
+
+    public abstract void openPage();
 
     private static void startSuite() {
         try {
@@ -32,5 +36,9 @@ public abstract class BasePage extends BMIConstants {
 
     }
 
-    public abstract void openPage();
+    public int randomGenerator(int min, int max) {
+        Random generator = new Random();
+        return generator.nextInt((max - min) + 1) + min;
+    }
+
 }

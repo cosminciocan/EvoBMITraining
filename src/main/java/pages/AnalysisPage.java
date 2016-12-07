@@ -19,5 +19,10 @@ public class AnalysisPage extends BasePage {
         driver.get(BMIConstants.BASE_URL + "/dailyviewsstrategiccontent/analysis");
     }
 
+    public void clickRandomTitle(){
+        int max = articleTitles.size()-1;
+        articleTitles.get(randomGenerator(0,max)).click();
+    }
+
 
 }

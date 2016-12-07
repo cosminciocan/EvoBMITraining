@@ -10,7 +10,7 @@ import util.BasePage;
  */
 public class HomePageSteps {
 
-    HomePage homePage;
+    private HomePage homePage;
 
     public HomePageSteps() {
         homePage = PageFactory.initElements(BasePage.driver, HomePage.class);
