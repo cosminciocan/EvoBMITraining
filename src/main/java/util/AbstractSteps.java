@@ -1,5 +1,6 @@
 package util;
 
+import steps.AnalysisSteps;
 import steps.HomePageSteps;
 import steps.LoginSteps;
 
@@ -10,4 +11,5 @@ public class AbstractSteps {
 
     public HomePageSteps homePageSteps = new HomePageSteps();
     public LoginSteps loginSteps = new LoginSteps();
+    public AnalysisSteps analysisSteps = new AnalysisSteps();
 }

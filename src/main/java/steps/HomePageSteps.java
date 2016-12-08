@@ -27,4 +27,7 @@ public class HomePageSteps {
                 homePage.getWelcomeText().toLowerCase().contains("welcome, " + user.toLowerCase()));
     }
 
+    public void goToAnalysisPage(){
+        homePage.clickAnalysisPage();
+    }
 }
